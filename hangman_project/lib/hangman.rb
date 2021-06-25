@@ -18,7 +18,7 @@ class Hangman
   end
 
   def get_matching_indices(ch)
-    (1...@secret_word.length).select { |i| @secret_word[i] == ch }
+    (0...@secret_word.length).select { |i| @secret_word[i] == ch }
   end
 
   def fill_indices(ch, arr)

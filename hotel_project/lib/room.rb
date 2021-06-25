@@ -11,7 +11,7 @@ class Room
     end
 
     def available_space
-        capacity - @occupants.length
+        @capacity - @occupants.length
     end
 
     def add_occupant(name)
